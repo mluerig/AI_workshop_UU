@@ -36,8 +36,9 @@ pip install jupyter notebook
 
 ## 3 - use pretrained model to segment damselflies
 
-1. in `pp-env`, install keras: `pip install keras`  
-2. download the models: 
+1. in `pp-env`, install keras and tensorflow: `pip install keras tensorflow`  
+2. download the project:
+3. download the models: https://drive.google.com/drive/folders/1CEpkiKM14PX_iYfJ-ZPzWGYGoJC-9hpJ?usp=share_link
 
 ## 4 - segment anything algorthim
 
