@@ -2,10 +2,11 @@
 
 ## 0 - how to use this repo
 
-first, install mamba
+first, install mamba - much faster than conda
 ```
 conda install -c conda-forge mamba
 ```
+all code can be run in jupyter notebooks (`jupyter notebooks`), or directly in the Spyder IDE (`spyder`) 
 
 ## 1 - simple thresholding procedures for batch processing of isopods
 
