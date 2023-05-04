@@ -1,5 +1,7 @@
 # AI_workshop_UU
 
+![image](https://user-images.githubusercontent.com/15648068/236338994-2469c942-436a-4b54-aa04-8987c15918d8.png)
+
 ## 0 - how to use this repo
 
 first, install mamba - much faster than conda
