@@ -16,7 +16,8 @@ all code can be run in jupyter notebooks (`jupyter notebooks`), or directly in t
 2. go to directory and make new virtual environment:
 
 ```
-mamba create -n iso-cv-env python=3.6
+mamba create -n iso-cv-env python=3.6 
+mamba install spyder
 conda activate iso-cv-env
 pip install opencv-python==3.3.1.11
 ```
