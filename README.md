@@ -18,7 +18,7 @@ all code can be run in jupyter notebooks (`jupyter notebooks`), or directly in t
 ```
 mamba create -n iso-cv-env2 python=3.7
 mamba install spyder
-conda activate iso-cv-env
+conda activate iso-cv-env2
 pip install opencv-python==3.3.1.11
 ```
 3. start spyder by typing `spyder` and open `iso-cv-scanner.py`
