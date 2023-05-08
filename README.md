@@ -2,17 +2,20 @@
 
 ![image](https://user-images.githubusercontent.com/15648068/236338994-2469c942-436a-4b54-aa04-8987c15918d8.png)
 
-## how to use this repo
+## preparation
 
-first, install mamba - much faster than conda
+1. download and install anaconda (https://www.phenopype.org/docs/installation/python/)
+2. after successfull installation (check by running `conda` in console), install mamba:
 ```
 conda install -c conda-forge mamba
 ```
+3. follow the tutorials below
+
 all code can be run in jupyter notebooks (`jupyter notebooks`), or directly in the Spyder IDE (`spyder`) 
 
 ## simple thresholding procedures for batch processing of isopods
 
-1. download repo from https://github.com/mluerig/iso_cv
+1. download repo https://github.com/mluerig/iso_cv/archive/refs/heads/master.zip
 2. go to directory and make new virtual environment:
 
 ```
@@ -23,7 +26,7 @@ pip install opencv-python==3.3.1.11
 ```
 3. start spyder by typing `spyder` and open `iso-cv-scanner.py`
 
-## phenopype
+## phenopype (windows / unix only - sorry mac users)
 
 1. create new virtual environment
 ```
@@ -38,7 +41,7 @@ pip install jupyter notebook
 5. start `jupyter notebook` and run the vignettes 
 6. (optional) do all this in spyder (needs to be installed first)
 
-## pretrained Unet DL model to segment damselflies
+## pretrained Unet DL model to segment damselflies (windows / unix only - sorry mac users)
 
 [model was trained using Christophe Avenel's materials from the NBIS workshop on Deep Learning](https://github.com/NBISweden/workshop-neural-nets-and-deep-learning/blob/master/session_convolutionalNeuralNetworks/Labs/CNN_Keras_lab_2.ipynb)
 
