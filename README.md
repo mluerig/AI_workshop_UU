@@ -4,8 +4,7 @@
 
 ## [0] preparation
 
-1. ~download and install anaconda (see https://www.phenopype.org/docs/installation/python/)~
-1. download and install mambaforge: https://github.com/conda-forge/miniforge#mambaforge
+1. download and install anaconda (see https://www.phenopype.org/docs/installation/python/)
 2. after successfull installation (check by running `conda` in console), install mamba:
 ```
 conda install -c conda-forge mamba
