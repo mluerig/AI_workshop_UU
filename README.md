@@ -17,7 +17,7 @@ mamba activate my-env
 ```
 4. install "jupyter notebooks" and "spyder" using "mamba":
 ```
-mamba install spyder and jupyter notebooks
+mamba install spyder jupyter notebooks
 ```
 5. install "phenopype" using "pip"
 ```
