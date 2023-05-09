@@ -4,27 +4,41 @@
 
 ## [0] preparation
 
-1. download and install anaconda (https://www.phenopype.org/docs/installation/python/)
+1. download and install anaconda (see https://www.phenopype.org/docs/installation/python/)
 2. after successfull installation (check by running `conda` in console), install mamba:
 ```
 conda install -c conda-forge mamba
 ```
-3. follow the tutorials below
+3. create a new conda environment, and activate it:
+```
+mamba create -n my-env python=3.7
+mamba activate my-env
+## if "mamba" doesn't work for activation, use "conda" instead
+```
+4. install "jupyter notebooks" and "spyder" using "mamba":
+```
+mamba install spyder and jupyter notebooks
+```
+5. install "phenopype" using "pip"
+```
+pip install phenopype
+```
+6. before continuing, a few notes about python environments:
+ 
+ - be rigorous and ALWAYS make a new environment for a project
+ - when you make a new environment, everything needs to be re-installed, including python, spyder, and all other dependencies
+ - dont't forget to activate your environment (check that it says `(my-env)` in the terminal, and not `(base)`
+ - see all your environments with `conda env list`
 
-all code can be run in jupyter notebooks (`jupyter notebooks`), or directly in the Spyder IDE (`spyder`) 
 
 ## [1] simple thresholding procedures for batch processing of isopods
 
+2023-05-09 - I updated the iso_cv repo, so please 
 1. download repo https://github.com/mluerig/iso_cv/archive/refs/heads/master.zip
-2. go to directory and make new virtual environment:
-
-```
-mamba create -n iso-cv-env2 python=3.7
-mamba install spyder
-conda activate iso-cv-env2
-pip install opencv-python==3.3.1.11
-```
-3. start spyder by typing `spyder` and open `iso-cv-scanner.py`
+2. unpack, go to folder, open a terminal
+3. activate the environment with `mamba activate my-env`
+4. start spyder by typing `spyder` and open `iso-cv-scanner.py`
+5. follow instructions (note that  
 
 ## [2] phenopype (windows / unix only - sorry mac users)
 
