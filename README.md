@@ -67,16 +67,17 @@ The DL model I use here was trained based on Christophe Avenel's [materials from
 
 **NOTE:** I am currently working on implementing a SAM workflow in phenopype, please stay tuned or get in touch if you feel like you'd like to help me :grin:
 
-1. go to https://segment-anything.com/demo and try some of the images from the phenopype tutorials, or your own images
+1. try the interactive web-app - go to https://segment-anything.com/demo 
 2. go to https://colab.research.google.com/github/facebookresearch/segment-anything/blob/main/notebooks/predictor_example.ipynb
 3. select 'GPU' under 'Edit'>'Notebook Settings'->'Hardware accelerator'
 4. select "Edit" > "Clear all outputs" (avoids spoilers)
 5. run code cell by cell
+6. try some of the images from the phenopype tutorials, or your own images
 
 ## [5] resources
 
 - general CV terminology and introduction: https://www.frontiersin.org/articles/10.3389/fevo.2021.642774/full
 - materials from NBIS workshop on DL (for self study) https://github.com/NBISweden/workshop-neural-nets-and-deep-learning
-- mailing list for CV in ecology and evolution https://groups.google.com/g/cv-eeb-mail
 - napari image viewer in Python https://napari.org/stable/
 - scientific community image forum (sponsored by the Center for Open Bioimage Analysis (COBA)) - https://forum.image.sc/. 
+- mailing list for CV in ecology and evolution https://groups.google.com/g/cv-eeb-mail
