@@ -26,38 +26,36 @@ pip install phenopype
 6. before continuing, a few notes about python environments:
  
  - be rigorous and ALWAYS make a new environment for a project
- - when you make a new environment, everything needs to be re-installed, including python, spyder, and all other dependencies
- - dont't forget to activate your environment (check that it says `(my-env)` in the terminal, and not `(base)`
+ - for each env all packages need to be re-installed, including python and spyder
+ - dont't forget to activate your environment (check that it says `(my-env)` in the terminal, and not `(base)`)
  - see all your environments with `conda env list`
-
 
 ## [1] simple thresholding procedures for batch processing of isopods
 
-2023-05-09 - I updated the iso_cv repo, so please 
-1. download repo https://github.com/mluerig/iso_cv/archive/refs/heads/master.zip
+**NOTE:** [iso-cv](https://github.com/mluerig/iso_cv) is a legacy repo with no real use other than demonstration of basic principles of computer vision. The workflow and functionality is fully contained in phenopype (www.phenopype.org), so please consider that when doing this tutorial - don't use it for production :grin: 
+
+1. download repo https://github.com/mluerig/iso_cv/archive/refs/heads/master.zip (updated on 2023-05-09)
 2. unpack, go to folder, open a terminal
 3. activate the environment with `mamba activate my-env`
 4. start spyder by typing `spyder` and open `iso-cv-scanner.py`
-5. follow instructions (note that  
+5. follow instructions
 
-## [2] phenopype (windows / unix only - sorry mac users)
+## [2] phenopype I - signal processing
 
-1. create new virtual environment
-```
-mamba create -n pp-env python=3.7
-conda activate pp-env
-pip install phenopype
-pip install jupyter notebook
-```
-2. dowload tutorials: https://github.com/phenopype/phenopype-tutorials/archive/refs/heads/main.zip
+**NOTE:** phenopype currently only works under windows / unix - sorry mac users. 
+
+1. activate the environment with `mamba activate my-env`
+2. dowload phenopoype tutorials: https://github.com/phenopype/phenopype-tutorials/archive/refs/heads/main.zip
 3. start `jupyter notebook` and run tutorials 
 4. download https://github.com/phenopype/phenopype-gallery/archive/refs/heads/main.zip
 5. start `jupyter notebook` and run the vignettes 
-6. (optional) do all this in spyder (needs to be installed first)
+6. (optional) do all this in spyder - e.g., save the notebooks as Python scripts from a running jupyter notebook using `File > Download as > Python (.py)`.
 
-## [3] pretrained Unet DL model to segment damselflies (windows / unix only - sorry mac users)
+## [3] phenopype II - deep learning
 
-[model was trained using Christophe Avenel's materials from the NBIS workshop on Deep Learning](https://github.com/NBISweden/workshop-neural-nets-and-deep-learning/blob/master/session_convolutionalNeuralNetworks/Labs/CNN_Keras_lab_2.ipynb)
+**NOTE:** phenopype currently only works under windows / unix - sorry mac users. 
+
+The DL model I use here was trained based on Christophe Avenel's [materials from the NBIS workshop on Deep Learning](https://github.com/NBISweden/workshop-neural-nets-and-deep-learning/blob/master/session_convolutionalNeuralNetworks/Labs/CNN_Keras_lab_2.ipynb) - see below 
 
 1. in `pp-env`, install keras and tensorflow: `pip install keras tensorflow`  
 2. download the project: https://drive.google.com/file/d/1tnE73y2mx3VjKzkfuiNXimZ8CPCE5EKr/view?usp=sharing
@@ -67,7 +65,9 @@ pip install jupyter notebook
 
 ## [4] segment anything model (SAM)
 
-1. go to https://segment-anything.com/demo and try some of the images we used so far
+**NOTE:** I am currently working on implementing a SAM workflow in phenopype, please stay tuned or get in touch if you feel like you'd like to help me :grin:
+
+1. go to https://segment-anything.com/demo and try some of the images from the phenopype tutorials, or your own images
 2. go to https://colab.research.google.com/github/facebookresearch/segment-anything/blob/main/notebooks/predictor_example.ipynb
 3. select 'GPU' under 'Edit'>'Notebook Settings'->'Hardware accelerator'
 4. select "Edit" > "Clear all outputs" (avoids spoilers)
@@ -75,4 +75,8 @@ pip install jupyter notebook
 
 ## [5] resources
 
- - https://github.com/NBISweden/workshop-neural-nets-and-deep-learning
+- general CV terminology and introduction: https://www.frontiersin.org/articles/10.3389/fevo.2021.642774/full
+- materials from NBIS workshop on DL (for self study) https://github.com/NBISweden/workshop-neural-nets-and-deep-learning
+- mailing list for CV in ecology and evolution https://groups.google.com/g/cv-eeb-mail
+- napari image viewer in Python https://napari.org/stable/
+- scientific community image forum (sponsored by the Center for Open Bioimage Analysis (COBA)) - https://forum.image.sc/. 
